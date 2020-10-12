@@ -1,0 +1,16 @@
+<div>
+<p>hello-world works! </p>
+ <p> {{ message }} </p>
+<p> {{ today }} </p>
+ <p>  Adding two numbers  {{ addTwoNumbers(3,4) }}
+</p>
+</div>
+<div>
+ <h3>{{user.firstName}}</h3>
+ <h3>{{user.lastName}}</h3>
+ <h3>{{user.location}}</h3>
+ <div *ngIf="user.phone.length"> 
+    <p *ngFor =" let phoneNumber of user.phone">{{phoneNumber}}</p>
+ </div>
+</div>
+
